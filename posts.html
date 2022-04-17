@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Booking Bookingan</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'biru': '#373D6F',
+                        'abu': '#f1f1f1'
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="h-16">
+        <nav class="px-4 md:px-12 h-full md:flex md:justify-between items-center my-auto bg-biru">
+            <div class="flex justify-between items-center h-full">
+                <div class="logo text-white">
+                    <!-- <img src="/assets/img/blabla.jpg" alt="logo-kraton" width="50"> -->
+                    Logo
+                </div>
+
+                <span class="text-xl cursor-pointer block md:hidden">
+                    <i id="menu" class="fa fa-bars text-white" onclick="toggleMenu(this)"></i>
+                </span>
+            </div>
+
+            <ul
+                class="md:flex md:items-center -z-10 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-5 md:opacity-100 opacity-0 top-100 md:text-white bg-white md:bg-inherit">
+                <li class="mb-2 mx-6 md:mx-6 md:my-0 active-link"><a href="#">Home</a></li>
+                <li class="mb-2 mx-6 md:mx-6 md:my-0"><a href="#">Saved</a></li>
+                <li class="mb-2 mx-6 md:mx-6 md:my-0"><a href="#">Login</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="flex flex-col items-center">
+        <div class="gallery-item w-full text-center p-8">
+            <div class="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-left">
+                <div class="items h-[50vh] border border-black rounded-lg">
+                    <div class="relative h-[90%] relative">
+                        <img src="assets/img/jetshoot.jpg" alt="img-item" class="h-full rounded-t-lg">
+                        <div class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 text-white">
+                            <div class="h-full">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <div class="h-[10%] bg-white overflow-hidden rounded-b-lg flex items-center justify-center ">Ini Judul</div>
+                </div>
+                <div class="items h-[50vh] border border-black rounded-lg">
+                    <div class="relative h-[90%] relative">
+                        <img src="assets/img/jetshoot.jpg" alt="img-item" class="h-full rounded-t-lg">
+                        <div class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 text-white">
+                            <div class="h-full">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <div class="h-[10%] bg-white overflow-hidden rounded-b-lg flex items-center justify-center ">Ini Judul</div>
+                </div>
+                <div class="items h-[50vh] border border-black rounded-lg">
+                    <div class="relative h-[90%] relative">
+                        <img src="assets/img/jetshoot.jpg" alt="img-item" class="h-full rounded-t-lg">
+                        <div class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 text-white">
+                            <div class="h-full">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <div class="h-[10%] bg-white overflow-hidden rounded-b-lg flex items-center justify-center ">Ini Judul</div>
+                </div>
+                <div class="items h-[50vh] border border-black rounded-lg">
+                    <div class="relative h-[90%] relative">
+                        <img src="assets/img/jetshoot.jpg" alt="img-item" class="h-full rounded-t-lg">
+                        <div class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 text-white">
+                            <div class="h-full">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <div class="h-[10%] bg-white overflow-hidden rounded-b-lg flex items-center justify-center ">Ini Judul</div>
+                </div>
+                <div class="items h-[50vh] border border-black rounded-lg">
+                    <div class="relative h-[90%] relative">
+                        <img src="assets/img/jetshoot.jpg" alt="img-item" class="h-full rounded-t-lg">
+                        <div class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 text-white">
+                            <div class="h-full">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <div class="h-[10%] bg-white overflow-hidden rounded-b-lg flex items-center justify-center ">Ini Judul</div>
+                </div>
+                <div class="items h-[50vh] border border-black rounded-lg">
+                    <div class="relative h-[90%] relative">
+                        <img src="assets/img/jetshoot.jpg" alt="img-item" class="h-full rounded-t-lg">
+                        <div class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 text-white">
+                            <div class="h-full">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <div class="h-[10%] bg-white overflow-hidden rounded-b-lg flex items-center justify-center ">Ini Judul</div>
+                </div>
+                <div class="items h-[50vh] border border-black rounded-lg">
+                    <div class="relative h-[90%] relative">
+                        <img src="assets/img/jetshoot.jpg" alt="img-item" class="h-full rounded-t-lg">
+                        <div class="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 text-white">
+                            <div class="h-full">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            </div> 
+                        </div>
+                    </div>
+                    
+                    <div class="h-[10%] bg-white overflow-hidden rounded-b-lg flex items-center justify-center ">Ini Judul</div>
+                </div>
+            </div>
+            <!-- <button class="rounded-lg border p-2 w-1/2 mt-8 bg-white">More</button> -->
+        </div>
+    </main>
+
+    <footer class="h-12 bg-biru text-white flex items-center justify-center">
+        Ini Footer
+    </footer>
+
+    <script src="https://kit.fontawesome.com/c4b7794d4e.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        // Block Code Make Responsive in Smaller Viewport Size
+        let list = document.querySelector("ul");
+        const arrayClass = ["opacity-0", "-top-100", "-z-10"];
+        function toggleMenu(event) {
+            if (event.classList.contains("fa-bars")) {
+                event.classList.remove("fa-bars");
+                event.classList.add("fa-close");
+                list.classList.remove(...arrayClass);
+            } else {
+                event.classList.add("fa-bars");
+                event.classList.remove("fa-close");
+                list.classList.add(...arrayClass);
+            }
+        }
+    </script>
+</body>
+
+</html>
