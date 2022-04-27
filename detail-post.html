@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Booking Bookingan</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'biru': '#373D6F',
+                        'abu': '#f1f1f1'
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="h-16">
+        <nav class="px-4 md:px-12 h-full md:flex md:justify-between items-center my-auto bg-biru">
+            <div class="flex justify-between items-center h-full">
+                <div class="logo text-white">
+                    <!-- <img src="/assets/img/blabla.jpg" alt="logo-kraton" width="50"> -->
+                    Logo
+                </div>
+
+                <span class="text-xl cursor-pointer block md:hidden">
+                    <i id="menu" class="fa fa-bars text-white" onclick="toggleMenu(this)"></i>
+                </span>
+            </div>
+
+            <ul
+                class="md:flex md:items-center -z-10 md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-5 md:opacity-100 opacity-0 top-100 md:text-white bg-white md:bg-inherit">
+                <li class="mb-2 mx-6 md:mx-6 md:my-0 active-link"><a href="#">Home</a></li>
+                <li class="mb-2 mx-6 md:mx-6 md:my-0"><a href="#">Saved</a></li>
+                <li class="mb-2 mx-6 md:mx-6 md:my-0"><a href="#">Jhon Die</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="flex flex-col items-center">
+        <section class="hero w-full h-[60vh] bg-black">
+            <img src="/assets/img/jetshoot.jpg" alt="bg-heroes" class="h-full w-full object-cover">
+        </section>
+
+
+        <section class="description w-full flex justify-between h-[60vh] p-8">
+            <div class="w-[90%]">
+                <h1 class="text-2xl font-bold">Diskon THR Pol-polan Buat Mudik Tanpa Ragu</h1>
+                <p>Masa Berlaku : <span>24 Januari - 30 Januari</span></p>
+
+                <p class="font-bold mt-8">Deskripsi</p>
+                <p class="my-2">Kabar bahagia, THR buat mudik cair duluan! Beli Tiket buat pulang kampung bisa lebih irit karena ada THR sepanjang hari!</p>
+                <p class="my-2">Makin mantap dengan diskon THR pol-polan untuk semua produk hingga 50% + 20% di jam 17:00 - 21:00 WIB mulai 21 April 2022</p>
+
+                <p class="my-2">Rayakan Lebaran atau liburan dengan nyaman, saatnya bulatkan tiketmu</p>
+            </div>
+            <div class="w-[10%] text-right">
+                <i class="fa-solid fa-bookmark text-2xl"></i>
+            </div>
+        </section>
+        <button class="bg-biru text-white w-1/2 my-4 p-2 rounded-xl">Go To Detail Website</button>
+    </main>
+
+    <footer class="h-12 bg-biru text-white flex items-center justify-center">
+        Ini Footer
+    </footer>
+
+    <script src="https://kit.fontawesome.com/c4b7794d4e.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        // Block Code Make Responsive in Smaller Viewport Size
+        let list = document.querySelector("ul");
+        const arrayClass = ["opacity-0", "-top-100", "-z-10"];
+        function toggleMenu(event) {
+            if (event.classList.contains("fa-bars")) {
+                event.classList.remove("fa-bars");
+                event.classList.add("fa-close");
+                list.classList.remove(...arrayClass);
+            } else {
+                event.classList.add("fa-bars");
+                event.classList.remove("fa-close");
+                list.classList.add(...arrayClass);
+            }
+        }
+    </script>
+</body>
+
+</html>
